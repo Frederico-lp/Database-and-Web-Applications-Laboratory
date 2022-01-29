@@ -9,6 +9,7 @@ We implemented a search feature capable of searching by book title and author, a
 Registered users have a profile they can change and manage however they please, and administrative tools for admin users to use, so they can manage users, books and orders.
 URL to the product: http://lbaw2131.lbaw.fe.up.pt (only available with UP VPN)
 
+![Screenshot from 2022-01-29 14-46-25](https://user-images.githubusercontent.com/74887259/151665396-649144b2-065c-4cdc-a7a0-aa889f5e367b.png)
 
 ### Video presentation
 The video shown here presents a brief, 2 minute overview of the contents and workings of the final product.
