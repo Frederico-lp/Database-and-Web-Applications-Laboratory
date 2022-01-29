@@ -1,0 +1,574 @@
+body {
+  background-color: #ffffff;
+  color: #161418;
+  font-family: "Perpetua Titling MT", serif;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.topnav {
+  display: flex;
+  overflow: hidden;
+
+}
+.topnav form {
+  float: inline-end;
+  display: flex;
+}
+
+.topnav .search-container{
+  margin-inline-start: auto;
+}
+
+.topnav input[type=text] {
+  background-color: #f7f2f2;
+
+}
+.topnav .search-container button{
+  background-color: #c4aeae;
+  color: #333030;
+  border-color: #c4aeae;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.general-content {
+  display: block;
+}
+
+.block {
+  font-size: 20px;
+  width: 80%;
+  background-color: rgb(236, 228, 228);
+  overflow: hidden;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+
+
+
+.profile-info{
+  justify-content: start;
+  height: 400px;
+
+}
+
+.block h1{
+  color: #860b05;
+  padding-top: 25px;
+  padding-left: 25px;
+
+}
+
+.photo-name{
+  float: left;
+  margin-left: 1%;
+  width: 25%;
+  background-color: rgb(238, 235, 235);
+  text-align: center;
+  border-radius: 25px;
+  height: 350px;
+}
+
+.photo-name img {
+  border-radius: 50%;
+  margin-top: 10%;
+}
+
+
+.information{
+  background-color: rgb(238, 235, 235);
+  width: 65%;
+  border-radius: 25px;
+  padding-left: 18px;
+  margin-left: 30%;
+}
+
+.information p2{
+  padding-left: 25px;
+  color :#860b05;
+}
+
+
+
+
+#contenthome{
+  display: block;
+  justify-content: start;
+}
+
+
+#listing-books .btn{
+  background-color: #860b05;
+  position: relative;
+  width: 100px;
+}
+
+
+
+#books {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+#books article.book {
+  display: block;
+  padding: 1em;
+  margin: 1em;
+  height: min-content;
+}
+#books article.book img {
+  float: inline-start;
+  align-items: center;
+}
+
+#books #book-information{
+  position: absolute;
+  bottom : 0;
+}
+
+
+/*book page*/
+
+#bookpage{
+  display: flex;
+  padding: 2em;
+}
+
+#bookpage div1 {
+  float: left;
+}
+
+
+#bookpage .text{
+  float: right;
+  padding: 2em;
+  display: inline;
+  width: 40%;
+
+}
+
+#bookpage .text h1{
+  font-size: 60px;
+  color: #161418;
+}
+
+
+#bookpage .text p{
+  font-size: 15px;
+  color:#161418;
+  margin-bottom: 0%;
+  padding-left: 25px;
+}
+
+
+#price-buttons{
+  float: right;
+}
+
+#price-buttons h2{
+  padding-top: 2em;
+  text-align: center;
+  font-size: 50px;
+  color: #860b05;
+}
+
+#price-buttons .block{
+  width: min-content;
+  float: left;
+  background-color: white;
+  display: inline-flex;
+}
+
+#price-buttons .block input{
+  width: 60px;
+  float: left;
+}
+#price-buttons .block button{
+  float: right;
+  width:150px;
+}
+
+#price-buttons #wish {
+  padding-left: 86px;
+}
+#price-buttons #wish button{
+  width: 150px;
+}
+
+
+
+
+
+.btn-primary{
+  background-color: #860b05;
+  border-color: #860b05;
+  color:rgb(255, 255, 255);
+}
+
+.btn-primary:hover{
+  background-color: #85413e;
+  border-color: #9e312b;
+  color:rgb(255, 255, 255);
+}
+
+
+
+.checked{
+  color: orange;
+}
+
+#reviews{
+  padding-left: 5%;
+  align-items: center;
+}
+
+#comment{
+  border-radius: 15px;
+  background-color: rgb(236, 228, 228);
+  width: 70%;
+  display: flex;
+}
+
+#comment .profile-comment{
+  float: left;
+  width: 20%;
+  padding-top: 5%;
+  padding-left: 4%;
+ 
+}
+
+.profile-comment img{
+  border-radius: 50%;
+}
+
+ #comment .comment-content{
+  float:right;
+  max-width: 75%;
+  overflow: hidden;
+}
+
+#comment .buttons{
+  display: flex;
+}
+
+#comment .buttons #remove{
+  float:left;
+}
+
+.comment-content input{
+  background-color: white;
+}
+  /*cart*/
+
+.cart-books {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
+.cart-books article.book {
+  padding: 1em;
+  margin: 1em;
+  vertical-align: center
+}
+.cart-books article.book img {
+  float: inline-start;
+  align-items: center;
+}
+
+.cart-books article.book  h2 {
+  align-items: center;
+  font-size: 30px;
+  padding-top: 10px;
+  color: #3d0501;
+}
+
+.cart-books article.book p1 {
+  font-size: 15px;
+  color: #080808;
+}
+
+
+.cart-books article.book #remove{
+  align-items: center;
+
+}
+.cart-books article.book button {
+  margin-left: 20%;
+
+}
+
+#checkout{
+  align-content: center;
+  margin-left: 40%;
+}
+
+#checkout a.button{
+  background-color: #e4d5d4;
+  width: 350px;
+    background-color: #d6291c;
+  border-color: #d6291c;
+  color:rgb(255, 255, 255);
+}
+
+
+#checkout button{
+  width: 350px;
+
+}
+
+#checkout a.button:hover{
+  background-color: #ffffff;
+  color: #333030;
+  border-color: #c4aeae;
+}
+
+.page-item.active .page-link {
+  background-color: #861109;
+  border-color: #8f170c;
+}
+.page-link {
+  color: #860b05;
+}
+
+/*purchase history*/
+.order{
+  border-radius: 1.5%;
+  font-size: 20px;
+  display: inline-flexbox;
+}
+
+
+.order p1{
+  color:#8f170c;
+  padding-left: 30px;
+  padding-right: 30px;
+  float: left;
+}
+
+.order p{
+  color:#070505;
+}
+
+#edit-formula{
+  display: block;
+  background-color: #ffffff;
+  border-radius: 3%;
+  padding-left: 15px;;
+  padding-top: 15px;
+}
+
+#content label {
+  font-weight: normal;
+}
+#content > form {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 20em;
+  border: 1px solid #d2afe7;
+}
+#content > form .error {
+  font-weight: bold;
+  color: #ff3333;
+}
+#content > form input {
+  background-color: white;
+}
+@media (max-width: 70em) {
+
+  main > header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  main > header h1 {
+    grid-row-end: span 2;
+  }
+}
+@media (max-width: 100em) {
+  body {
+    margin: 0;
+  }
+  main > header {
+    margin: 0;
+    padding: 0.5em;
+  }
+  main > header span {
+    margin: 0;
+  }
+  #content-fluid form {
+    margin: 0;
+    max-width: 25em;
+  }
+  #content-fluid form {
+    margin: 0;
+    max-width: 25em;
+  }
+  #books{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+  }
+  #books article.book{
+    width: min-content;
+
+  }
+  #books article.book img {
+    height: 20vw ;
+    width: 15vw;
+  }
+  #books article.book {
+    display: block;
+    padding: 0em;
+    margin: 0em;
+    height: min-content;
+  }
+  p{
+    font-size: 2vw;
+  }
+  p1{
+    font-size: 2.5vw;
+  }
+  h3{
+    font-size: 2.5vw;
+  }
+  h1{
+    font-size: 5vw;
+  }
+  .photo-name{
+    margin-left: 1%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 25px;
+    height:min-content;
+    width: min-content;
+    padding-left: 10vw;
+    padding-bottom: 10vw;;
+
+
+  }
+  
+  .photo-name img {
+    border-radius: 50%;
+    margin-top: 10%;
+    width: 30vw;
+    align-items: center;
+    
+  }
+  
+  
+  .information{
+    background-color: rgb(238, 235, 235);
+    width: 90%;
+    display: inline-table;
+    margin-left: 0%;
+  }
+  
+  .information p2{
+    font-size: 4vw;
+    color :#860b05;
+  }
+  .information p3{
+    font-size: vw;
+  }
+
+
+
+}
+
+
+/**
+ * Overide milligram colors
+ * Some styles might be missing
+ **/
+button {
+  background-color: #d6291c;
+  border-color: #d6291c;
+}
+a.button:hover{
+  background-color: #d6291c;
+  border-color: #d6291c;
+  color:rgb(255, 255, 255);
+}
+a.button {
+  color:#333030;
+  background-color:#ffffff;
+  border-color: #f7f2f2;
+}
+a.button.button-outline {
+  color: #3d0501;
+}
+
+.topnav a.button {
+  color:#333030;
+  background-color:#ffffff;
+  border-color: #f7f2f2;
+}
+.topnav a.button:hover {
+  background-color: #d6291c;
+  border-color: #d6291c;
+  color:rgb(255, 255, 255);
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+  border-color: #080808;
+}
+
+a{
+  color:#5c0904;
+  text-decoration:initial;
+}
+
+a:hover{
+  color: #860b05;
+}
+h3{
+  color: #861109;
+  font-family: "Perpetua Titling MT", serif;
+}
+
+h1{
+  color: #861109;
+  padding: 5mm;
+}
+
+.text p{
+  color: #080808;
+}
+
+.text p2{
+  padding-left: 5px;
+  color: #3d0501;
+  font-size: 25px;
+}
+
+
+.text h2{
+  color: #1f1c1b;
+  padding: 5mm;
+  padding-left: 15px;
+}
